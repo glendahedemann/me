@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./src/img/index.jpg" />
+    <meta property="og:url" content="https://draaakos.github.io/shared-link-test" />
+    <meta property="og:title" content="¡Hola! Soy Glenda" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./src/css/index.css">
+    <title>¡Hola! Soy Glenda</title>
+    <script>
+        const onShare = function() {
+            if (navigator.share) {
+                navigator.share({ title: "¡Hola! Soy Glenda", text: "", url: "https://draaakos.github.io/shared-link-test" });
+            }
+                return false;
+            }
+    </script>
+</head>
+<body>
+    <div class="card">
+        <div><img src="./src/img/index.jpg" /></div>
+        <div class="shared" onclick="onShare()">
+            <img src="./src/img/shared.png">
+        </div>
+
+        <div class="video">
+            <iframe 
+                src="https://cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fyoutu.be%2FFD0KdFAtrLY&amp;key=462812a26b593f2dbfbfcbb14f6d699a" 
+                style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;transform: scale(2);" 
+                allowfullscreen="" 
+                scrolling="no" 
+                allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *; web-share *;"
+            ></iframe>
+        </div>
+
+        <div class="dual-content">
+            <div class="rrss">
+                <div class="button-actions">
+                    <a class="button-action__item" target="_blank" href="https://www.instagram.com/glendahedemann"></a>
+                    <a class="button-action__item" target="_blank" href="https://api.whatsapp.com/message/JSA5GETHFS6SG1?autoload=1&app_absent=0"></a>
+                    <a class="button-action__item" target="_blank" href="https://linktr.ee/glendahedemann"></a>
+                    <a class="button-action__item" target="_blank" href="https://www.airbnb.es/users/113401498/listings"></a>
+                    <a class="button-action__item" target="_blank" href="mailto:%3Aglenda.hedemann%40gmail.com"></a>
+                    <a class="button-action__item" target="_blank" href="https://www.whatsapp.com/catalog/5491164150775/?app_absent=0" class="button-action__item"></a>
+                </div>
+                <img src="./src/img/rrss.png" />
+            </div>
+            <div class="pay">
+                <div class="button-actions">
+                    <a class="button-action__item" target="_blank" href="https://www.airbnb.es/users/show/113401498"></a>
+                    <a class="button-action__item" target="_blank" href="https://open.spotify.com/playlist/7r3qM9K2Z86eJNIXiQ2vtA?si=568adbe46a354c37&nd=1"></a>
+                    <a class="button-action__item" target="_blank" href="https://www.paypal.com/paypalme/glendahedemann?country.x=AR&locale.x=es_XC"></a>
+                </div>
+                <img src="./src/img/pay.png" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
